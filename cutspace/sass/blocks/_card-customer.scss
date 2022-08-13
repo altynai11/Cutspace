@@ -1,0 +1,38 @@
+.card-customer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 88px;
+    background: $white-color;
+    box-shadow: 0px 40px 52px  -22px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.2s ease, color 0.2s ease;
+
+    .card-customer__icon{
+        fill: #F78434;
+    }
+
+    &:hover{
+        background-color: $accent-color-hover;
+        color: $white-color;
+
+        .card-customer__icon{
+            fill: $white-color;
+        }
+
+        .button{
+            background-color: $white-color;
+            color: $accent-color;
+        }
+    }
+}
+.card-customer img{
+    margin-bottom: 15px;
+}
+.card-customer__title {
+}
+.card-customer__text{
+    margin-bottom: 25px;
+}
